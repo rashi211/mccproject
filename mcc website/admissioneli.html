@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: poppins;
+        background-color:white;
+        -webkit-background-size:cover;
+        background-color:white;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height:100vh;
+    }
+    a{
+        font-size:12px;
+        text-transform: uppercase;
+    }
+    .nav-area{
+        background:white;
+    }
+    .nav-area:after{
+        content:'';
+        clear:both;
+        display:block;
+
+    }
+    .nav-area ul{
+        list-style:none;
+        margin: 0;
+    }
+    .nav-area > ul > li{
+        float:left;
+        position: relative;
+    }
+    .nav-area ul li a{
+        text-decoration:none;
+        color:grey;
+        padding: 10px 22px;
+        display:block;
+        font-size: 17px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+    .nav-area ul li:hover a{
+        background: #800400;
+    }
+    .nav-area ul ul{
+        position: absolute;
+        padding:0;
+        min-width: 160px;
+        display:none;
+        top:100%;
+        left:0;
+    }
+    .nav-area ul li:hover > ul{
+        display: block;
+    }
+    .nav-area ul ul li:hover a{
+        background-color:rgb(114, 46, 46);
+    }
+    .nav-area ul ul ul{
+        top: 0;
+        left: 100%;
+    }
+    .nav-area ul ul ul li:hover a{
+        background: #800400;
+    }
+    #covid-cell{
+        text-align: right;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 14px;
+        color: gray;
+        padding-bottom: 25px;
+
+    }
+    #abc{
+        color: rgb(117, 43, 43);
+        text-align:center;
+        font-family:'Lucida Sans';
+        font-size: 24px;
+        font-weight: lighter;
+        padding-bottom: -45px;
+    }
+    #abf{
+        color: rgb(117, 43, 43);
+        text-align:left;
+        font-family:'Lucida Sans';
+        font-size: 22px;
+        font-weight: lighter;
+        padding:0.1%;
+    }
+    #abd{
+        color:grey;
+        text-align:center;
+        font-family:'Lucida sans';
+        font-size:16px;
+        font-weight: lighter;
+            }
+    #abe{
+        color:grey;
+        text-align:center;
+        font-family:'Lucida sans';
+        font-size:16px;
+        font-weight: lighter;
+        border: 1px solid transparent;
+        display: block;
+        overflow: hidden;
+        margin: 0 0 21.73913043px 0;
+        padding: 1em 1em 1em 4em;
+        position: relative;
+        font-size: 1em;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border-radius: 5px;
+        color: #5e7f96;
+        border-color: #cfebfe;
+        background-color: #dff2fe;
+
+            }
+        #abg{
+        color:grey;
+        text-align:left;
+        font-family:'Lucida sans';
+        font-size:16px;
+        font-weight: lighter;
+        display: block;
+        overflow: hidden;
+        margin: 0 0 21.73913043px 0;
+        padding: 1em 1em 1em 4em;
+        position: relative;
+        font-size: 1em;
+
+            }
+        #t{
+            border:1px solid #800400;
+            text-align:left;
+            font-family:'Lucida sans';
+            margin:42px;
+            color:grey;
+        }
+        #par{
+            border-right: 1px solid #800400;
+            text-align:left;
+            font-family:'Lucida sans';
+            background-color:rgb(250, 250, 250);        
+            }
+        #r{
+            text-align:center;
+            font-family:'Lucida sans';
+            background-color:rgb(255, 249, 249);
+
+        }
+        #abh{
+            background: #800400;
+            text-align:left;
+            font-family:sans-serif;
+            font-weight: lighter;
+            padding: 30px;
+            padding-left:40px;
+            padding-right:40px;
+        }
+        #dash{
+            padding-top: -125px;
+            margin-top: -25px;
+            color: #800400;
+        }
+        #abi{
+            padding-top: 0px;
+            padding-bottom: -5px;
+            padding-right: 40px;
+            padding-left: 60px;
+            color:white;
+            font-size:15px;
+            text-align: left;
+        }
+        #abj{
+            padding-top: 25px;
+            padding-bottom: 55px;
+            padding-right: 50px;
+            font-family:sans-serif;
+            padding-left: 50px;
+            color:rgb(77, 75, 75);
+            font-size:23px;
+            font-weight: lighter;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="covid-cell"> Covid-19 Cell | S tudents |  Staff |  Placements |  Alumini | Career <br></h1>
+    <nav class="nav-area">
+        <ul>
+            <li><img src="logo.png"></li>
+            <li><a href ="#">About Us</a></li>
+            <li><a href = "#">Academics</a>
+                <ul>
+                    <li><a href ="#">Science</a></li>
+                    <li><a href = "#">Humanities</a></li>
+                    <li><a href = "#">Commerce & Management</a></li>
+                    <li><a href = "#">Internation Programs</a></li>
+
+                </ul>
+            
+            </li>
+            <li><a href = "admissionpage.html">Admission</a>
+                <ul>
+                    <li><a href ="admissionguidelines.html">Admission Guidelines</a></li>
+                    <li><a href = "admissioneli.html">Admission Eligibility</a></li>
+                    <li><a href = "admissioninternation.html">Internation Students</a></li>
+                    <li><a href = "admissionform.html">Admission Form</a></li>
+
+                </ul>
+            </li>
+            <li><a href = "#">Infrastructure</a>
+            <li><a href = "#">Contact us</a>
+        </ul>
+        
+    </nav>
+    
+</body>
+</html>
+    <img src="ap1.png" width="100%" height="700px">
+    <h2 id="abc">It all starts here!</h2>
+    <h2 id="abd">It all starts her-curricular and extra-curricular<br> activities which are further, enhanced by national and international exposure!</h2>
+    <p id="abe">Dear Parents/Candidates.<br><br>It has come to the Notice of the Institution that Parents/Candidates are receiving SMS from unauthorized sources promising <br>admission to various courses of the institution.<br><br>Management is not responsible for any such communication and Institution has not appointed any Middlemen or Agents for<br>admission process.<br><br>All applicants are hereby cautioned not to be misguided with such messages.<br><br>ADMISSION TO MOUNT CARMEL IS DIRECT AND BASED ON FULFILLMENT OF ELIGIBILITY CRITERIA<br></p>
+    
+    <h2 id= "abc">Admission Eligiblility</h2>
+    <h2 id="dash"><center>_________</center></h2>
+    <table id="t">
+        <tbody >
+            <h3 id="abc">UG Commerce & Management</h3>
+            <tr>
+            <td id="par" >
+            <ol>
+            <li>B.Com. General</li>
+            <li>B.Com. Tourism and Travel Management(BMTT)</li>
+            <li>B.Com. Industry Integrated</li>
+            <li>B.Com. Professional</li>
+            <li>B.Com.-BPS(Business Process Services)</li>
+            <li>B.Com.- IAF(International Accounting and Finance)</li>
+            <li>BCom &#8211; Honours (Integrated with CMA) Specialisation &#8211; Strategic Finance</li>
+            </ol>
+            </td>
+            <td id="r"><strong>Eligibility</strong></p>
+            <p>Students who have completed two years Pre-University Course in Commerce of Karnataka or Class XII of CBSE/ISC or equivalent there to are eligible to apply for B.Com. Programs.</td>
+            </tr>
+            <tr>
+            <td id="par">Business Studies &#8211; BBA</td>
+            <td id="r" ><strong>ELIGIBILITY</strong></p>
+            <p>Students who have completed two-year Pre-University Course in Commerce/ Arts/ Science/ of Karnataka / Class XII – CBSE/ISC or Equivalent there to are eligible to seek admission to BBA Degree Course. Further, they are required to,</p>
+            <ul>
+            <li>Take a written admission test in Maths, English, Reasoning, Aptitude, Current Affairs, and General Knowledge.</li>
+            <li>Participate in a Group Discussion and</li>
+            <li>Undergo a Personal Interview</li>
+            </ul>
+            <p>SPECIALIZATION – HRM/MARKETING MANAGEMENT/FINANCE/INTERNATIONAL BUSINESS</td>
+            </tr>
+            </tbody>
+    </table>
+    <h3><br></h3>
+    <table id="t">
+        <tbody >
+        <h3 id="abc">UG Humanities</h3>
+        <tr>
+        <td id="par">History, Economics, Political Science (HEP)</p>
+        <p>History, Economics, Sociology (HES)</p>
+        <p>History, Journalism, Travel &amp; Tourism (HJTT)</p>
+        <p>Political Science, Economics, Sociology (PES)</p>
+        <p>Political Science, Economics, Journalism ( PEJ)</p>
+        <p>Psychology, Economics, Sociology (PyES)</p>
+        <p>Psychology, English Literature, Journalism (PyEJ)</p>
+        <p>Psychology, English Literature, Economics (PyEE)</p>
+        <p>Psychology, Physical Education, Tourism (PyPT)</td>
+        <td id="r"><strong>ELIGIBILITY</strong> Students should have completed II PUC/ Std XII from any stream (Arts, Science or Commerce) <strong>NOTE</strong> Applicants seeking admission under sports quota must have represented at State, National or International levels in individual or team sport. Please contact Dr. Mary Dolly, Associate Professor, Department of Physical Education +91 9448620478</td>
+        </tr>
+        <tr>
+        <td id="par">Psychology, English Literature, Communication Studies (PyEC)</td>
+        <td id="r" ><strong>ELIGIBILITY</strong> The candidate must fulfill the following to apply for this course:</p>
+        <ul>
+        <li>Passed Std XII/ PUC or equivalent school leaving examinations</li>
+        <li>Possess excellence in the English language</li>
+        <li>Have an interest in current affairs and the Media</li>
+        <li>Have a creative bent of mind</li>
+        <li>Have the ability to work hard and with consistency</li>
+        </ul>
+        </td id="par">
+        </tr>
+        <tr>
+        <td id="par">BA Honours  in Communication Studies</td>
+        <td id="r"><strong>ELIGIBILITY</strong> The candidate must fulfill the following to apply for this course:</p>
+        <ul>
+        <li>Passed Std XII/ PUC or equivalent school leaving examinations</li>
+        <li>Possess excellence in the English language</li>
+        <li>Have an interest in current affairs and the Media</li>
+        <li>Have a creative bent of mind</li>
+        <li>Have the ability to work hard and with consistency</li>
+        </ul>
+        </td>
+        </tr>
+        <tr>
+        <td id="par">B.Voc Hospitality and Tourism (B.H.T)</td>
+        <td id="r"><strong>ELIGIBILITY</strong> 10+2 PASS With 60% marks Student must be proficient with General Knowledge and Current Affairs.</td>
+        </tr>
+        <tr>
+        <td id="par">Four-Year Integrated BA-B.Ed. (HEP/HES)</td>
+        <td id="r"><strong>ELIGIBILITY </strong></p>
+        <ul>
+        <li>The basic eligibility criteria for admission to these programmes is a pass in the Pre-University examination of Karnataka/ CBSE Senior Secondary examination/ or an equivalent examination with 60% marks.</li>
+        <li>Students applying for BA-B. Ed.  must   have studied any two subjects, viz. History, Economics, Political Science /Sociology, at PUC/10+2 level.</li>
+        <li>Second language offered is Hindi or Kannada</li>
+        </ul>
+        <p>&nbsp;</td>
+        </tr>
+        </tbody>
+        </table>
+
+        <table id = "t">
+            <tbody>
+                <h3 id="abc">UG Science</h3>
+            <tr>
+            <td id="par">Physics, Chemistry, Mathematics (PCM) Physics, Mathematics, Electronics (PME) Physics, Mathematics, Computer Science (PMC)</td>
+            <td id="r"><strong>ELIGIBILITY</strong> Any Science Student with Physics and Mathematics as subjects in 12th /PUC course.</td>
+            </tr>
+            <tr>
+            <td id="par">Computer Science, Mathematics, Electronics (CME)</td>
+            <td id="r"><strong>ELIGIBILITY</strong> Any Science Student with Mathematics as subjects in 12th /PUC course.</td>
+            </tr>
+            <tr>
+            <td id="par">Computer Science, Mathematics, Statistics (CMS)</td>
+            <td id="r"><strong>ELIGIBILITY</strong> Any Science Student with Mathematics as one of the subjects in 12th /PUC course.</td>
+            </tr>
+            <tr>
+            <td id="par">Economics, Mathematics, Statistics (EMS)</td>
+            <td id="r"><strong>ELIGIBILITY</strong> Any Student with Mathematics/Business Mathematics as one of the subjects in 12th /PUC course.</td>
+            </tr>
+            <tr>
+            <td id="par">Chemistry, Botany, Zoology (CBZ)</td>
+            <td id="r"><strong>ELIGIBILITY</strong> Science Student with PCMB/PCBH as combinations with cut off 60% and above.</td>
+            </tr>
+            <tr>
+            <td id="par">Chemistry,Zoology,Environmental Science(CZE) Chemistry, Botany, Environmental Science (CBE)</td>
+            <td id="r"><strong>ELIGIBILITY</strong> Any Science Student with cut off 60% and above.</td>
+            </tr>
+            <tr>
+            <td id="par">Chemistry, Botany, Microbiology (CBM) Chemistry, Zoology, Microbiology (CZM) Biotechnology, Chemistry, Zoology (BtCZ) Biotechnology, Chemistry, Botany (BtCB)</td>
+            <td id="r"><strong>ELIGIBILITY</strong> Any Science Student with cut off 75% and above.</td>
+            </tr>
+            <tr>
+            <td id="par">Nutrition &amp; Dietetics, Chemistry, Zoology (NDCZ)</td>
+            <td id="r"><strong>ELIGIBILITY</strong> One should have passed 10 +2 or equivalent with minimum aggregate of 50%(45% for SC/ST) marks from a recognized board. The student should have chemistry in 10 +2 and scored minimum 60% marks in chemistry.</td>
+            </tr>
+            <tr>
+            <td id="par">Composite Home Science (H.Sc.)</td>
+            <td id="r"><strong>ELIGIBILITY</strong> Students should have passed two years Pre-University (10+2) and should have studied Chemistry/Home Science.</td>
+            </tr>
+            <tr>
+            <td id="par">Interior Design and Management (IDM)</td>
+            <td id="r"><strong>ELIGIBILITY</strong> Students should have passed two years Pre-University (10+2) Course with a minimum of 60% marks.</td>
+            </tr>
+            <tr>
+            <td id="par">Nutrition and Dietetics, Chemistry , Human Development(NDCH)</td>
+            <td id="r"><strong>ELIGIBILITY</strong> One should have passed 10 +2 or equivalent with minimum aggregate of 50%(45% for SC/ST) marks from a recognized board. The student should have chemistry in 10 +2 and scored minimum 60% marks in chemistry.</td>
+            </tr>
+            <tr>
+            <td id="par">Fashion Design &amp; Apparel Management(FAD)</td>
+            <td id="r"><strong>ELIGIBILITY</strong> Students should have passed two years Pre-University (10+2) Course with a minimum of 70% marks , from any stream(Arts , Science and Commerce)</td>
+            </tr>
+            <tr>
+            <td id="par">Bachelor of Computer Applications(BCA)</td>
+            <td id="r"><strong>ELIGIBILITY</strong> Students who have passed two years Pre-University (10+2) Course of Karnataka or equivalent examination are eligible to apply for admission to BCA Degree Programme.</td>
+            </tr>
+            <tr>
+            <td id="par">UGC Sponsored Degree Course in Data Science and Analytics</td>
+            <td id="r"><strong>ELIGIBILITY</strong> Candidate seeking admission for B.Voc (Data Science and Analytics) course should have passed the Pre-University or an equivalent course with Mathematics / Business Mathematics / Statistics as one of the optional subjects.</td>
+            </tr>
+            <tr>
+            <td id="par">Four-Year Integrated BSc-B.Ed. (CBZ/PCM)</td>
+            <td id="r"><strong>ELIGIBILITY</strong></p>
+            <ul>
+            <li>The basic eligibility criteria for admission to these programmes is a pass in the Pre-University examination of Karnataka/ CBSE Senior Secondary examination/ or an equivalent examination with 60% marks.</li>
+            <li>Second language offered is Hindi or Kannada</li>
+            </ul>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+    
+
+    <h1><br><br></h1>
+    <table id ="abh">
+
+        <tr id = "abj">
+          <th>Quick Link</th>
+          <th>Quick Link</th>
+          <th>Quick Link</th>
+          <th>Contact Us</th>
+        </tr>
+        <tr id ="abj">
+          <td id = "abi">About Us</td>
+          <td id = "abi">Internal Quality Assurance Cell</td>
+          <td id = "abi">Skill Development</td>
+          <td id = "abi">080 2226 1759</td>
+        </tr>
+        <tr id = "abj">
+            <td id = "abi">Academics</td>
+            <td id = "abi">Student Union</td>
+            <td id = "abi">MCC Alumini Association</td>
+            <td id = "abi">mccweb@mccblr.edu.in</td>
+        </tr>
+        <tr id = "abj">
+            <td id = "abi">Admissions</td>
+            <td id = "abi">Gallery & Media</td>
+            <td id = "abi">Green Initiatives</td>
+            <td id = "abi">Mount Carmel College</td>
+        </tr>
+        <tr id = "abj">
+            <td id = "abi">Infrastructure</td>
+            <td id = "abi">UGC Supported Programs</td>
+            <td id = "abi">Capability Enhancement Scheme</td>
+            <td id = "abi">No 58, Palace Rd, Abshot Layout, Vasanth</td>
+        </tr>
+        <tr id = "abj">
+            <td id = "abi">Research</td>
+            <td id = "abi">Center For Extended Education</td>
+            <td id = "abi">IPR & Industry</td>
+            <td id = "abi">Nagar, Bengaluru, Karnataka 560052.</td>
+        </tr>
+        <tr id = "abj">
+            <td id = "abi">Exam Centre</td>
+            <td id = "abi">student Achievements</td>
+            <td id = "abi">Centre For Learning Development<br>& Transformation</td>
+        </tr>
+        <tr id = "abj">
+            <td id = "abi">News & Events</td>
+            <td id = "abi">Internal Complaints Commmittee</td>
+            <td id = "abi">Human Values & Professional<br>Ethics Programs</td>
+        </tr>
+        <tr id = "abj">
+            <td id = "abi">Placements</td>
+            <td id = "abi">Associations & Cells</td>
+            <td id = "abi">Centre For Learning Development<br>& Transformation</td>
+            <td id = "abi" rowspan="10"><img src="location.PNG"></td>
+        </tr>
+        <tr id = "abj">
+            <td id = "abi">Library</td>
+            <td id = "abi">NCC</td>
+            <td id = "abi">Centre For Innovations<br>Incubations & Entrepreneurship</td>
+        </tr>
+        <tr id = "abj">
+            <td id = "abi">Staff Directory</td>
+            <td id = "abi">NSS</td>
+            <td id = "abi">Department</td>
+
+        </tr>
+        <tr id = "abj">
+            <td id = "abi">Skill Development</td>
+            <td id = "abi">Contact us</td>
+            <td id = "abi">UGC - Paramarsh</td>
+        </tr>
+      </table>
+</body>
+</html>
